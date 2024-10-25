@@ -1,0 +1,162 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f3; /* Soft, light background */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6; /* Improved readability */
+}
+
+.container {
+    max-width: 1000px; /* Wider container */
+    margin: 40px auto;
+    padding: 40px; /* More padding for spacious layout */
+    background: #ffffff; /* White background for content */
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #007BFF 0%, #0056b3 100%); /* Gradient background */
+    color: #ffffff; /* White text */
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 12px 12px 0 0; /* Rounded top corners */
+}
+
+.profile-image {
+    width: 180px; /* Profile image width */
+    height: 180px; /* Profile image height */
+    border-radius: 50%; /* Circular image */
+    border: 4px solid #ffffff; /* White border */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    margin-bottom: 20px; /* Spacing below image */
+}
+
+h1 {
+    margin: 10px 0; /* Spacing adjustments */
+    font-size: 2.8em; /* Larger heading */
+}
+
+h2 {
+    color: #007BFF; /* Primary color for section titles */
+    margin-top: 30px; /* More space above section titles */
+    border-bottom: 2px solid #e1e1e1; /* Underline for section titles */
+    padding-bottom: 8px; /* Spacing below title */
+}
+
+/* About Section Styles */
+.about {
+    margin: 30px 0;
+}
+
+/* Skills Section Styles */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Even spacing between items */
+    margin: 20px 0;
+}
+
+.skill {
+    background: #28a745; /* Green for skill badges */
+    color: #ffffff; /* White text */
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin: 10px 5px; /* Consistent margin */
+    flex: 1 1 calc(30% - 10px); /* Responsive skill boxes */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    font-weight: 500;
+}
+
+.skill:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Projects Section Styles */
+.projects {
+    margin: 30px 0;
+}
+
+.project {
+    border: 1px solid #e1e1e1; /* Light gray border */
+    border-radius: 5px;
+    padding: 20px;
+    margin: 15px 0;
+    background: #f9f9f9; /* Light background for projects */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+}
+
+.project:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}
+
+.project h3 {
+    margin: 0 0 10px; /* Margin below project title */
+    color: #007BFF; /* Title color */
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: #007BFF; /* Button color */
+    color: #ffffff; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.btn:hover {
+    background: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Contact Section Styles */
+.contact {
+    margin-top: 30px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333; /* Dark footer */
+    color: #ffffff; /* White text */
+    border-radius: 0 0 12px 12px; /* Rounded bottom corners */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px; /* Spacing above footer */
+}
+
+/* Link Styles */
+a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+a:hover {
+    color: #0056b3; /* Darker color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills {
+        flex-direction: column; /* Stack skills on smaller screens */
+        align-items: center; /* Center align skills */
+    }
+
+    .skill {
+        flex: 1 1 100%; /* Full width on mobile */
+        margin: 10px 0; /* Margin adjustments */
+    }
+}
